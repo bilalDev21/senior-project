@@ -1,0 +1,38 @@
+<mat-toolbar class="nav">
+    <div class="left-section">
+      <span>Supervisor Of Tools</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/tool-list" class="nav-button">Tool</button>
+      <button mat-icon-button routerLink="/create-tool" class="nav-button">Add Tool</button>
+      <button mat-icon-button routerLink="/orders" class="nav-button">All Orders</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+  
+  <div class="container mt-2">
+    <form (ngSubmit)="submitForm()" #form="ngForm" class="tool-form my-4">
+      <div class="form-group mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="ToolData.name" class="form-control" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="description" class="form-label">Description:</label>
+        <textarea id="description" name="description" [(ngModel)]="ToolData.description" class="form-control" rows="5" required></textarea>
+      </div>
+      <div class="form-group mb-3">
+        <label for="quantity" class="form-label">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" [(ngModel)]="ToolData.quantity" class="form-control" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="tax" class="form-label">Tax:</label>
+        <input type="number" id="tax" name="tax" [(ngModel)]="ToolData.tax" class="form-control" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="image" class="form-label">Image:</label>
+        <input type="file" id="image" name="image" (change)="onFileSelected($event)" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+    </form>
+  </div>
+  

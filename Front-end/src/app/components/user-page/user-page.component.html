@@ -1,0 +1,562 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+<!-- Vendor CSS Files -->
+<link href="../../../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../../../../assets/css/normalize.css"/>
+<link rel="stylesheet" href="../../../../assets/css/elzero.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../../../../assets/css/all.min.css" />
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>Muni</span>cipality</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">					
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user-page/{{userId}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tools/{{userId}}">Tool</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/events/{{userId}}">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/report/{{userId}}">report</a>
+        </li>
+        <li class="nav-item">
+          <a class="getstarted" routerLink="/">Logout {{user.name}}</a>
+        </li>
+      </ul>
+    </div>
+   
+</nav>
+<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+  <div class="carousel-indicators">
+    <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img alt="..." class="d-block w-100" src="../../../assets/slide-1.jpg">
+      <div class="carousel-caption">
+        <h5 class="animated fadeInDown" style="animation-delay: 1s">Digital city platform</h5>
+        <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Contribute to improving the quality of municipal services provided, and raising customer satisfaction.</p>
+        <p class="animated fadeInUp" style="animation-delay: 3s"><a routerLink="/user-page/{{userId}}">Learn More</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img alt="..." class="d-block w-100" src="../../../assets/slide-2.jpg">
+      <div class="carousel-caption">
+        <h5 class="animated fadeInDown" style="animation-delay: 1s">Digital city platform</h5>
+        <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Contribute to improving the quality of municipal services provided, and raising customer satisfaction.</p>
+        <p class="animated fadeInUp" style="animation-delay: 3s"><a routerLink="/user-page/{{userId}}">Learn More</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img alt="..." class="d-block w-100" src="../../../assets/slide-3.jpg">
+      <div class="carousel-caption">
+        <h5 class="animated fadeInDown" style="animation-delay: 1s">Digital city platform</h5>
+        <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Contribute to improving the quality of municipal services provided, and raising customer satisfaction.</p>
+        <p class="animated fadeInUp" style="animation-delay: 3s"><a routerLink="/user-page/{{userId}}">Learn More</a></p>
+      </div>
+    </div>
+  </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+</script> 
+ 
+
+    <!-- Start Service -->
+    <div class="portfolio mt-5" id="portfolio">
+      <div class="containerrrr">
+        <h2 class="main-title">SERVICES</h2>
+        <div class="portfolio-content">
+          <div class="card">
+            <img decoding="async" src="https://www.york.ca/sites/default/files/images/MunicipalConsent_Inline.jpg" alt="" />
+            <div class="info">
+              <h3>Electronic Municipal Authorization</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img decoding="async" src="https://splashbi.com/wp-content/uploads/2019/09/self-service-reporting.jpg" alt="" />
+            <div class="info">
+              <h3>Reporting Services</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img decoding="async" src="https://media.licdn.com/dms/image/C4D12AQFPKxXcXlP4MA/article-cover_image-shrink_720_1280/0/1601383707646?e=2147483647&v=beta&t=x57jo0SNaH2lceOsu20Qj8w998ZW3bx8zjsac3U-_mo" alt="" />
+            <div class="info">
+              <h3>Organizing events</h3>
+              <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- Start Our Projects -->
+    <div class="gallery mt-5" id="gallery">
+      <h2 class="main-title">Our Projects</h2>
+      <div class="containerrrr">
+        <div class="box">
+          <div class="image">
+            <img src="https://static2.bigstockphoto.com/0/7/4/large1500/47046427.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="https://www.esi-africa.com/wp-content/uploads/2020/05/Renewable-energy.-Solar.-Wind.-Green-economy.-Clean-power-768x576.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="https://i0.wp.com/neuroject.com/wp-content/uploads/2023/08/Top_17_Largest_Construction_Projects_in_the_World_2023_Reviews_Madison_Square_Garden_Sphere_Neuroject.jpg?resize=840%2C560&ssl=1" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="https://i.dailymail.co.uk/i/pix/2015/03/12/264FB31A00000578-2989923-image-a-5_1426147376456.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="https://eventistrybyalecia.com/wp-content/uploads/2018/07/event-trendsetting.jpg" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="https://thumb.spokesman.com/MJmx0ium80f6CvswewEes5djkcc=/2500x1875/smart/media.spokesman.com/photos/2020/08/20/5f3f13199e472.hires.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Projects -->
+
+    <!-- Start Team -->
+    <div class="team mt-5" id="team">
+          <h2 class="main-title">Team Members</h2>
+          <div class="containerrrr">
+            <div class="box">
+              <div class="data">
+                <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="data">
+                <img src="https://img.freepik.com/free-photo/young-businessman-with-lot-work_1098-3838.jpg" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="data">
+                <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="data">
+                <img src="https://img.freepik.com/premium-photo/young-businessman-working-office-with-laptop-documents-desk_533890-2081.jpg" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="data">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46ZW_xVKyUPJB0-NbUmAAr8uqW-7Z2nMlB8aSEnhGfDTWknruFjPdgjm48sjSwIZ-WRs&usqp=CAU" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="data">
+                <img src="https://img.freepik.com/premium-photo/handsome-young-businessman-working-with-documents_656932-112.jpg" alt="" />
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Your Name</h3>
+                <p>Simple Short Description</p>
+              </div>
+            </div>
+     
+     
+          </div>
+    </div>
+    <div class="spikes"></div>
+    <!-- End Team -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials mt-5 mb-5" id="testimonials">
+          <h2 class="main-title">Testimonials</h2>
+          <div class="containerrrr">
+            <div class="box">
+              <img src="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt=""/>
+              <h3>Mohamed Farag</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+            <div class="box">
+              <img src="https://img.freepik.com/premium-photo/memoji-handsome-indian-guy-man-white-background-emoji-cartoon-character_826801-7991.jpg" alt=""/>
+              <h3>Mohamed Ibrahim</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+            <div class="box">
+              <img src="https://img.freepik.com/premium-photo/cartoon-character-smiling-man-wearing-cap-plaid-shirt-white-isolated-background_840989-6900.jpg" alt="">
+              <h3>Shady Nabil</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+            <div class="box">
+              <img src="https://img.freepik.com/premium-photo/man-with-glasses-blue-shirt-is-wearing-blue-shirt-hat_669646-984.jpg" alt="" />
+              <h3>Amr Hendawy</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+            <div class="box">
+              <img src="https://static.vecteezy.com/system/resources/previews/041/641/689/non_2x/3d-character-people-close-up-portrait-smiling-nice-3d-avartar-or-icon-png.png" alt="" />
+              <h3>Sherief Ashraf</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+            <div class="box">
+              <img src="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9193.jpg" alt="" />
+              <h3>Osama Mohamed</h3>
+              <span class="title">Full Stack Developer</span>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus
+                quaerat ducimus
+              </p>
+            </div>
+          </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- ======= Contact Section ======= -->
+    <div class="containerrr">
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+         
+            <h2 class="main-title">Contact</h2>
+       
+  
+          <div class="mb-3">
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          </div><!-- End Google Maps -->
+  
+          <div class="row gy-4">
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-map flex-shrink-0 bg-primary"></i>
+                <div>
+                  <h3>Our Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-envelope flex-shrink-0 bg-primary"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>contactexample.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-telephone flex-shrink-0 bg-primary"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-share flex-shrink-0 bg-primary"></i>
+                <div>
+                  <h3>Opening Hours</h3>
+                  <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                    <strong>Sunday:</strong> Closed
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+          </div>
+  
+          <form  role="form" class="php-email-form p-3 p-md-4">
+            <div class="row">
+              <div class="col-xl-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form><!--End Contact Form -->
+  
+        </div>
+      </section>
+    </div><!-- End Contact Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> infoexample.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
+  
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="../../../../assets/vendor/aos/aos.js"></script>
+  <script src="../../../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="../../../../assets/js/main.js"></script>
+ 

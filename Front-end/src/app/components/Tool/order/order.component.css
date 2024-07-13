@@ -1,0 +1,93 @@
+.nav{
+    background-color: rgb(13, 110, 253);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-button {
+    color: white;
+    background-color: rgb(13, 110, 253); /* Background color for all buttons */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    border-color: white; /* Border color on hover */
+  }
+  
+  .mat-icon-button {
+    margin-right: 10px;
+  } 
+
+/* icon */
+.nav .icon{
+  padding-right: 10px;
+  color: aliceblue;
+}
+
+/* orders */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-card {
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.order-details {
+  padding: 16px;
+}
+
+.order-message {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.order-message .order-number {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.order-message .user-name {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.order-message .tool-name {
+  font-style: italic;
+  color: #ff5733;
+}
+
+.order-message .delivery-time {
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 16px;
+}

@@ -1,0 +1,35 @@
+<mat-toolbar class="nav">
+    <div class="left-section">
+      <span>Supervisor Of Report</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/report-list" class="nav-button">All Report</button>
+      <button mat-icon-button routerLink="/report-history" class="nav-button">History Report</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+</mat-toolbar>
+
+<div class="container">
+    <div class="card-container">
+      <ng-container *ngFor="let report of ReportList">
+        <mat-card class="example-card p-2">
+          <mat-card-header>
+            <mat-card-title> <i>From : </i>{{ report.userName }}</mat-card-title>
+            <mat-card-title>Title : {{ report.title }}</mat-card-title>
+            <mat-card-subtitle>{{ report.location }}</mat-card-subtitle>
+          </mat-card-header>
+          <img [src]="report.image" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>{{ report.description }}</p>
+          </mat-card-content>
+          <mat-card-content>
+            <p [ngClass]="{'green-text': report.status}">{{ report.status }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button class="btn btn-primary m-2" (click)="Accepted(report.reportId)">Done</button>
+            <button mat-button class="btn btn-danger" (click)="Rejected(report.reportId)">Cancel</button>
+          </mat-card-actions>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>

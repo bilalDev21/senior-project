@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+/*------------ Login container ------------*/
+.box-area {
+    max-width: 900px;
+    width: 100%;
+}
+
+/*------------ Right box ------------*/
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+.form-control::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.row{
+    font-size: 18px;
+}
+
+a.sign-up-link {
+    font-weight: bold; /* Change font weight to bold */
+    font-size: 16px; /* Change font size */
+    color: #007bff; /* Change text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+a.sign-up-link:hover {
+    font-size: 17px; /* Change font size */
+    color: #2310cc; /* Change text color */
+}

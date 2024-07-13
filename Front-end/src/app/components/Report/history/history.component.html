@@ -1,0 +1,41 @@
+<mat-toolbar class="nav">
+  <button routerLink="/user-page/{{userId}}">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+    </div>
+  </button>
+    <div class="left-section">
+      <span>Report Department</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/report/{{userId}}" class="nav-button">Report</button>
+      <button mat-icon-button routerLink="/report-list/{{userId}}" class="nav-button">My Report</button>
+      <button mat-icon-button routerLink="/history/{{userId}}" class="nav-button">History</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+  
+  <div class="container">
+    <div class="card-container">
+      <ng-container *ngFor="let report of HistoryList">
+        <mat-card class="example-card p-2">
+          <mat-card-header>
+            <mat-card-title>{{ report.title }}</mat-card-title>
+            <mat-card-subtitle>{{ report.location }}</mat-card-subtitle>
+          </mat-card-header>
+          <img [src]="report.image" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>{{ report.description }}</p>
+          </mat-card-content>
+          <mat-card-content>
+            <p [ngClass]="{'green-text': report.status === 'Done', 'red-text': report.status === 'Canceled'}">{{ report.status }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button class="btn btn-primary m-2">More details</button>
+          </mat-card-actions>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>

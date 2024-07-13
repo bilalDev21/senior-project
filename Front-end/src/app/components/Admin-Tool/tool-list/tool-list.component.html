@@ -1,0 +1,44 @@
+<mat-toolbar class="nav">
+    <div class="left-section">
+      <span>Supervisor Of Tools</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/tool-list" class="nav-button">Tool</button>
+      <button mat-icon-button routerLink="/create-tool" class="nav-button">Add Tool</button>
+      <button mat-icon-button routerLink="/orders" class="nav-button">All Orders</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+
+  <div class="container mt-4">
+    <div class="card-container">
+      <ng-container *ngFor="let tool of ToolList">
+        <mat-card class="example-card">
+          <div class="card-content">
+            <div class="card-text">
+              <mat-card-title class="tool-title">{{ tool.name }}</mat-card-title>
+              <mat-card-content>
+                <p class="tool-description">{{ tool.description }}</p>
+              </mat-card-content>
+              <mat-card-content class="tool-info">
+                <span class="tool-quantity"><b>Quantity :</b> {{ tool.quantity }}</span>
+                <span class="tool-tax"><b>Tax :</b> {{ tool.tax }}</span>
+              </mat-card-content>
+              <mat-card-content>
+                <p [ngClass]="{'status-available': tool.status === 'Available', 'status-not-available': tool.status !== 'Available'}">{{ tool.status }}</p>
+              </mat-card-content>
+              <mat-card-actions class="card-actions">
+                <button mat-button class="btn btn-primary" (click)="Edit(tool.id)">Edit</button>
+                <button mat-button class="btn btn-danger" (click)="delete(tool.id)">Delete</button>
+              </mat-card-actions>
+            </div>
+            <div class="card-image">
+              <img [src]="tool.image" alt="Photo of a {{ tool.name }}">
+            </div>
+          </div>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>
+  
+  

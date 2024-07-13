@@ -1,0 +1,27 @@
+<mat-toolbar class="nav">
+    <div class="left-section">
+      <span>Supervisor Of Tools</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/tool-list" class="nav-button">Tool</button>
+      <button mat-icon-button routerLink="/create-tool" class="nav-button">Add Tool</button>
+      <button mat-icon-button routerLink="/orders" class="nav-button">All Orders</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+   
+
+  <div class="container mt-4">
+    <div class="order-container">
+      <div class="order-card" *ngFor="let order of OrderList; let i = index">
+        <div class="order-details">
+          <p class="order-message">
+            Order <span class="order-number">#{{i + 1}}</span>: <span class="user-name">{{order.userName}}</span> has ordered the <span class="tool-name">{{order.toolName}}</span>. <i>{{order.status}}</i>
+            <button class="btn btn-primary ml-3" (click)="submit(order.orderId)" [disabled]="order.status == 'Finished'">Finish</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

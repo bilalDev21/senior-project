@@ -1,0 +1,49 @@
+<mat-toolbar class="nav">
+    <button routerLink="/user-page/{{userId}}">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg>
+      </div>
+    </button>
+    <div class="left-section">
+      <span>Tool Department</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/tools/{{userId}}" class="nav-button">Order Tool</button>
+      <button mat-icon-button routerLink="/order/{{userId}}" class="nav-button">My Order</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+
+  <div class="container mt-4">
+    <div class="card-container">
+      <ng-container *ngFor="let tool of ToolList">
+        <mat-card class="example-card">
+          <div class="card-content">
+            <div class="card-text">
+              <mat-card-title class="tool-title">{{ tool.name }}</mat-card-title>
+              <mat-card-content>
+                <p class="tool-description">{{ tool.description }}</p>
+              </mat-card-content>
+              <mat-card-content class="tool-info">
+                <span class="tool-quantity"><b>Quantity :</b> {{ tool.quantity }}</span>
+                <span class="tool-tax"><b>Tax :</b> {{ tool.tax }}</span>
+              </mat-card-content>
+              <mat-card-content>
+                <p [ngClass]="{'status-available': tool.status === 'Available', 'status-not-available': tool.status !== 'Available'}">{{ tool.status }}</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button class="btn btn-primary" [disabled]="tool.status === 'not available'" (click)="Order(tool.id, tool.tax)">Order Now</button>
+              </mat-card-actions>
+            </div>
+            <div class="card-image">
+              <img [src]="tool.image" alt="Photo of a {{ tool.name }}">
+            </div>
+          </div>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,66 @@
+.nav{
+    background-color: rgb(13, 110, 253);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-button {
+    color: white;
+    background-color: rgb(13, 110, 253); /* Background color for all buttons */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    border-color: white; /* Border color on hover */
+  }
+  
+  .mat-icon-button {
+    margin-right: 10px;
+  }
+
+ 
+/* card */
+.card-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+  justify-content: center; /* Align cards to the start of the container */
+  gap: 20px; /* Set the gap between cards to 20px */
+}
+
+.example-card {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.green-text {
+  font-size:18px;
+  padding-top: 8px;
+  font-weight: 800;
+  color: green;
+}
+
+.red-text {
+  font-size:18px;
+  padding-top: 8px;
+  font-weight: 800;
+  color: red;
+}
+
+/* icon */
+.nav .icon{
+  padding-right: 10px;
+  color: aliceblue;
+}

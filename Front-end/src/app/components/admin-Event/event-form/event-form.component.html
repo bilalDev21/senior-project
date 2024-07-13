@@ -1,0 +1,43 @@
+<mat-toolbar class="nav">
+    <div class="left-section">
+      <span>Supervisor Of Events</span>
+    </div>
+    <div class="right-section">
+      <button mat-icon-button routerLink="/Event-List" class="nav-button">Event</button>
+      <button mat-icon-button routerLink="/create-event" class="nav-button">Add Event</button>
+      <button mat-icon-button routerLink="/request" class="nav-button">All Requests</button>
+      <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+    </div>
+  </mat-toolbar>
+
+<div class="w-full px-36 py-8">
+    <form [formGroup]="EventForm" (ngSubmit)="Save()">
+        <div  class="w-full flex flex-wrap">
+            <mat-form-field class="w-full"> 
+                <input type="text" matInput placeholder="Name" formControlName="name">
+                <mat-label>Name</mat-label>
+            </mat-form-field>  
+        </div>
+        <div  class="w-full flex flex-wrap">
+            <mat-form-field class="w-full">
+                <mat-label>Description</mat-label>
+                <input type="text" matInput placeholder="Descreption" formControlName="description">
+            </mat-form-field>            
+        </div>
+        <div  class="w-full flex flex-wrap">
+            <mat-form-field class="w-full">
+                <mat-label>Type</mat-label>
+                <input type="text" matInput placeholder="Type" formControlName="type">
+            </mat-form-field>          
+        </div>
+        <div  class="w-full flex flex-wrap">
+            <mat-form-field class="w-full">
+                <mat-label>Date</mat-label>
+                <input type="date" matInput placeholder="Date" formControlName="date">
+            </mat-form-field>           
+        </div>    
+        <div class="flex justify-center">       
+            <button mat-raised-button class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>

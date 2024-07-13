@@ -1,0 +1,42 @@
+<mat-toolbar class="nav">
+  <button routerLink="/user-page/{{userId}}">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+    </div>
+  </button>
+  <div class="left-section">
+    <span>Report Department</span>
+  </div>
+  <div class="right-section">
+    <button mat-icon-button routerLink="/report/{{userId}}" class="nav-button">Report</button>
+    <button mat-icon-button routerLink="/report-list/{{userId}}" class="nav-button">My Report</button>
+    <button mat-icon-button routerLink="/history/{{userId}}" class="nav-button">History</button>
+    <button mat-icon-button routerLink="/" class="nav-button">Logout</button>
+  </div>
+</mat-toolbar>
+
+<div class="container pr-5 pl-5">
+  <form (ngSubmit)="submitForm()" #form="ngForm" class="my-4">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title:</label>
+      <input type="text" id="title" name="title" [(ngModel)]="formData.title" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="location" class="form-label">Location:</label>
+      <input type="text" id="location" name="location" [(ngModel)]="formData.location" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" name="description" [(ngModel)]="formData.description" class="form-control" rows="5" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Image:</label>
+      <input type="file" id="image" name="image" (change)="onFileSelected($event)" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>
+
+

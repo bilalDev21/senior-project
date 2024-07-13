@@ -1,0 +1,37 @@
+.nav{
+    background-color: rgb(13, 110, 253);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-button {
+    color: white;
+    background-color: rgb(13, 110, 253); /* Background color for all buttons */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Adjust padding */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    border-color: white; /* Border color on hover */
+  }
+  
+  .mat-icon-button {
+    margin-right: 10px;
+  }
+  
+  
+  
+  
+  
